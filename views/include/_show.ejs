@@ -1,0 +1,18 @@
+<% for(var i = 0; i < bungas.length; i++) { %>
+    <tr>
+        <td><%= i + 1 %></td>
+        <td><%=bungas[i].jenis %></td>
+        <td><%=bungas[i].warna %></td>
+        <td><%=bungas[i].tanggal %></td>
+        <td><%=bungas[i].stock %></td>
+        <td><%=bungas[i].status %></td>
+        <td>
+            <a href="/update-bunga?id=<%=bungas[i]._id%>" class="btn border-shadow update">
+                <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+            </a>
+            <a class="btn border-shadow delete" data-id=<%=bungas[i]._id%>>
+                <span class="text-gradient"><i class="fas fa-times"></i></span>
+            </a>
+        </td>
+    </tr>
+    <% } %>

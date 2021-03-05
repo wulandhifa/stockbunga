@@ -1,0 +1,44 @@
+<!-- form handling -->
+<form action="/api/bungas" method="POST" id="add_bunga">
+    <div class="new_bunga">
+        <div class="form-group">
+            <label for="jenis" class="text-light">Jenis Bunga</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="jenis" value="" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="warna" class="text-light">Warna Bunga</label>
+            <div class="border">
+            <select id="warna" name="warna">
+                <option value="Merah">Merah</option>
+                <option value="Putih">Putih</option>
+                <option value="Ungu">Ungu</option>
+                <option value="Kuning">Kuning</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="tanggal" class="text-light">Tanggal</label>
+            <input type="datetime-local" name="tanggal" value="" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="stock" class="text-light">Stock</label>
+            <input type="number" name="stock" value="" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="status" class="text-light">Status</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-2" name="status" value="masuk">
+                <label for="radio-2" class="radio-label">Masuk</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-3" name="status" value="keluar">
+                <label for="radio-3" class="radio-label">Keluar</label>
+            </div>
+        </div>   
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+
+    </div>
+</form>
